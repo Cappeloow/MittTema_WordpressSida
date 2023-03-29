@@ -70,6 +70,7 @@ main > p {
 
 }
 footer {
+    border-top:1px solid black;
     text-align: center;
     display:flex;
     margin:1px;
@@ -114,6 +115,7 @@ h3{
   /*****************BLOGGINLÄGG********************/
 main {
     overflow: auto;
+    position:relative;
 }
   section {
     width:70%;
@@ -173,7 +175,66 @@ main {
   }
 
 
+ .fullTextOfPost {
+  margin-top:20px;
+  width:80%;
+  height:70%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position:fixed;
+  z-index:5px;
+  display:Flex;
+  flex-direction:column;
+ } 
+
+ .titleAndExit {
+  height:20%;
+  width:100%;
+  display:Flex;
+  background-color: rgba(255, 255, 255, 0.761);
+  border-radius: 10px;
+ }
+ .titleAndExit > h1 {
+  width:98%;
+  color:rgb(19, 14, 6);
+ }
+ .titleAndExit > span {
+  cursor:pointer;
+  font-size:30px;
+  width:2%;
+  margin-right:4px;
+ }
+ .divImgAndText {
+  height:90%;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:20px;
+ }
+
+ .pictureInPost {
+  height:400px;
+  width:400px;
+  object-fit: cover;
+  border-radius:40px;
+ }
+ .divImgAndText > p {
+  max-height:30%;
+  width:50%;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding:20px;
   
+ }
+
+
+
 
 
   
@@ -206,6 +267,7 @@ main {
   section > .divOfPosts{
     flex-direction: column;
     width:400px;
+    height:450px;
   }
 }
 
