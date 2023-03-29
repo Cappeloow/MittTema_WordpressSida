@@ -10,3 +10,7 @@ if (item.href === window.location.href){
     item.classList.remove('selected');
 }
 })
+
+const posts = document.querySelectorAll('main section .divOfPosts')
+console.log(posts);
+
