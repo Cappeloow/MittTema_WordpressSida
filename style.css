@@ -46,8 +46,8 @@ li {
 main {
     display:flex;
     width:100%;
-    height:76%;
-    background-color: rgba(43, 115, 118, 0.298);
+    height:78%;
+    background-color: rgba(71, 162, 165, 0.298);
     justify-content: space-around;
 }
 main > div {
@@ -75,9 +75,11 @@ footer {
     text-align: center;
     display:flex;
     margin:1px;
+    height:13%;
     flex-direction: column;
     position:fixed;
     width:100%;
+    background-color: white;
 }
 
 /**********MYSKILLS UL***********/
@@ -187,7 +189,7 @@ main {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   position:fixed;
-  z-index:5px;
+  z-index:0;
   display:Flex;
   flex-direction:column;
  } 
@@ -207,7 +209,14 @@ main {
   cursor:pointer;
   font-size:30px;
   width:2%;
-  margin-right:4px;
+  margin-right:6px;
+  transition:1s;
+ }
+ .titleAndExit > span:hover {
+  color:rgba(0, 0, 0, 0.426);
+  rotate:  15deg;
+  transition:1s;
+
  }
  .divImgAndText {
   height:90%;
@@ -220,18 +229,22 @@ main {
  }
 
  .pictureInPost {
-  height:400px;
-  width:400px;
+  height:300px;
+  width:300px;
   object-fit: cover;
   border-radius:40px;
  }
+ .pictureInPost:hover {
+  height:700px;
+  width:700px;
+  transition:1s;
+ }
  .divImgAndText > p {
-  max-height:30%;
+  max-height:40%;
   width:50%;
   background-color: aliceblue;
   border-radius: 20px;
   padding:20px;
-  
  }
 
 
@@ -240,6 +253,19 @@ main {
 
   
 @media only screen and (max-width: 1007px) {
+  .divImgAndText > p {
+    width:90%;
+    padding:5px;
+    font-size:12px;
+   }
+   .pictureInPost:hover {
+    height:400px;
+    width:400px;
+    transition:1s;
+   }
+   .titleAndExit > span {
+    margin-right:10px;
+   }
   main {
       flex-direction: column;
       align-items: center;
